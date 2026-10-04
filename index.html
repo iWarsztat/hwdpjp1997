@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dzisiaj — Planer nauki</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">📚 Planer nauki</a>
+      <nav aria-label="Główna nawigacja">
+      <ul class="nav">
+        <li><a href="index.html" class="active" aria-current="page">🏠 Dzisiaj</a></li>
+        <li><a href="tydzien.html">📅 Tydzień</a></li>
+        <li><a href="dodaj.html">➕ Dodaj</a></li>
+        <li><a href="zadania.html">📝 Zadania</a></li>
+        <li><a href="sprawdziany.html">📚 Sprawdziany</a></li>
+        <li><a href="rutyna.html">⏰ Rutyna</a></li>
+      </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section class="card hero">
+      <p class="muted" id="todayDate"></p>
+      <h1 id="todayDay"></h1>
+      <h2 class="hero-q">Co dziś robimy?</h2>
+      <p id="todayMsg"></p>
+      <button type="button" id="notifBtn" class="btn btn-ghost">🔔 Włącz przypomnienia</button>
+      <p class="muted" id="notifInfo" role="status"></p>
+    </section>
+    <section class="stats">
+      <div class="card stat"><span class="stat-label">Szkoła</span><strong id="statSchool" class="stat-value">—</strong></div>
+      <div class="card stat"><span class="stat-label">Zadania pilne</span><strong id="statUrgent" class="stat-value">0</strong></div>
+      <div class="card stat"><span class="stat-label">Nadchodzące sprawdziany</span><strong id="statExams" class="stat-value">0</strong></div>
+      <div class="card stat"><span class="stat-label">Odpoczynek</span><strong id="statRest" class="stat-value">45 min</strong></div>
+    </section>
+    <div class="grid-2">
+      <section class="card"><h2>Plan nauki na dzisiaj</h2><table class="table"><thead><tr><th>Godziny</th><th>Przedmiot</th><th>Czas</th></tr></thead><tbody id="studyList"></tbody></table></section>
+      <section class="card"><h2>Najbliższy sprawdzian</h2><div id="nextExam"></div></section>
+    </div>
+    <section class="card"><h2>Pilne zadania</h2><ul id="urgentTasks" class="tasks"></ul></section>
+  </main>
+  <script src="js/app.js"></script>
+  <script src="js/today.js"></script>
+</body>
+</html>

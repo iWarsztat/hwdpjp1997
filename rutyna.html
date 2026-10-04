@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rutyna — Planer nauki</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">📚 Planer nauki</a>
+      <nav aria-label="Główna nawigacja">
+      <ul class="nav">
+        <li><a href="index.html">🏠 Dzisiaj</a></li>
+        <li><a href="tydzien.html">📅 Tydzień</a></li>
+        <li><a href="dodaj.html">➕ Dodaj</a></li>
+        <li><a href="zadania.html">📝 Zadania</a></li>
+        <li><a href="sprawdziany.html">📚 Sprawdziany</a></li>
+        <li><a href="rutyna.html" class="active" aria-current="page">⏰ Rutyna</a></li>
+      </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <h1 class="page-title">Rutyna</h1>
+    <p class="muted lead">Przykładowy dzień nauki: krótkie bloki, przerwy i czas na sen.</p>
+    <section class="card">
+      <ol class="timeline">
+        <li><span class="t-time">06:30–07:00</span><div><strong>Pobudka, śniadanie, przygotowanie</strong></div></li>
+        <li><span class="t-time">07:30–koniec szkoły</span><div><strong>Lekcje</strong></div></li>
+        <li><span class="t-time">Po powrocie + 45 min</span><div><strong>Obiad i odpoczynek</strong></div></li>
+        <li><span class="t-time">Blok 1</span><div><strong>25–50 min</strong> — najpilniejszy przedmiot</div></li>
+        <li class="brk"><span class="t-time">Przerwa</span><div>10 min</div></li>
+        <li><span class="t-time">Blok 2</span><div><strong>25–50 min</strong> — drugi przedmiot</div></li>
+        <li class="brk"><span class="t-time">Przerwa</span><div>15–30 min</div></li>
+        <li><span class="t-time">Blok 3</span><div><strong>25–45 min</strong> — zadania domowe / utrwalenie</div></li>
+        <li><span class="t-time">Wieczór</span><div><strong>Lekka powtórka, przygotowanie plecaka i sen</strong></div></li>
+      </ol>
+    </section>
+    <div class="grid-2">
+      <section class="card">
+        <h2>Kiedy zaczynać naukę?</h2>
+        <p class="muted">Koniec lekcji + 45 minut odpoczynku.</p>
+        <table class="table"><thead><tr><th>Dzień</th><th>Koniec lekcji</th><th>Start nauki</th></tr></thead><tbody id="startTable"></tbody></table>
+      </section>
+      <section class="card">
+        <h2>Zasady</h2>
+        <ul class="rules">
+          <li>Telefon poza biurkiem podczas nauki</li>
+          <li>Po 2–3 blokach dłuższa przerwa</li>
+          <li>Nie zarywać nocy przed sprawdzianem</li>
+          <li>Sen jest częścią nauki</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <script src="js/app.js"></script>
+  <script src="js/routine.js"></script>
+</body>
+</html>
